@@ -1,46 +1,61 @@
-# Getting Started with Create React App
+# BDH-Scraping-UI Project README
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This React project, developed in TypeScript, showcases a responsive grid created using the ANTD design library. The grid interacts with a MongoDB database, allowing users to download a generated CSV file. The project integrates web scraping from the BDH Online website to update data in the MongoDB. The app provides search functionality by first name, last name, and city, along with pagination to optimize backend APIs and reduce response time for large datasets.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+1. **Responsive Grid with ANTD:**
+   - Utilizes the ANTD design library to create a responsive grid for an improved user interface.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. **Data Update and CSV Generation:**
+   - Invoking the CSV generation function updates data in MongoDB through web scraping from [BDH Online](https://www.bdh-online.de/patienten/therapeutensuche/), ensuring the latest information is included in the generated CSV.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+3. **Search Functionality:**
+   - Enables users to search the grid by first name, last name, and city, facilitating easy data exploration.
 
-### `npm test`
+4. **Pagination:**
+   - Implements pagination to enhance backend APIs and minimize response time when dealing with large datasets.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started Locally
 
-### `npm run build`
+1. **Clone the Frontend Repository:**
+   ```bash
+   git clone https://github.com/Uchaneishvili/BDH-Scraping-UI.git
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install Dependencies:**
+   ```bash
+   cd BDH-Scraping-UI
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Clone the Backend API Repository:**
+   ```bash
+   git clone https://github.com/Uchaneishvili/BDH-Scraping-API.git
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Install Backend API Dependencies:**
+   ```bash
+   cd BDH-Scraping-API
+   npm install
+   ```
 
-### `npm run eject`
+5. **Start the Backend API:**
+   ```bash
+   npm start
+   ```
+   The API will be running on `http://localhost:3001` by default.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+6. **Start the React Project:**
+   ```bash
+   cd BDH-Scraping-UI
+   npm start
+   ```
+   The React app will be accessible on `http://localhost:3000`. Open your browser to explore the app.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## License
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
