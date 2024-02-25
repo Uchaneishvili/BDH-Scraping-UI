@@ -6,10 +6,7 @@ const Header = () => {
     <div className='header'>
       <div className='innerContainer'>
         <div className='logoContainer'>
-          <img
-            src='https://miro.medium.com/v2/resize:fit:512/1*nHfayfdmxAApbg84iMrJqQ.gif'
-            alt='scraping'
-          />
+          <img src='/assets/Scraping.gif' alt='scraping' />
         </div>
         <div className='titleContainer'>
           <h2>BDH Scraping</h2>
