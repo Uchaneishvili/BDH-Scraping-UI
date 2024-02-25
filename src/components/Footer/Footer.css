@@ -1,13 +1,18 @@
 .container {
   color: #1f2328;
-  padding: 16px;
+  padding: 18px;
   text-align: center;
   border-top: solid 1px #d0d7de;
   height: 100%;
+  display: flex;
 }
 
 .innerContainer {
   margin: 0 auto;
+}
+
+.innerContainer > p {
+  color: #1677ff;
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {

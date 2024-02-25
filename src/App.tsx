@@ -9,7 +9,9 @@ function App() {
       <header>
         <Header />
       </header>
-      <TherapistsGrid />
+      <main>
+        <TherapistsGrid />
+      </main>
       <footer>
         <Footer />
       </footer>

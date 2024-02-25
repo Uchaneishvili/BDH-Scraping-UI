@@ -1,7 +1,7 @@
 .header {
-  background-color: #f6f8fa;
-  color: #1f2328;
-  padding: 15px;
+  background-color: #1677ff;
+  color: #fff;
+  padding: 10px;
   text-align: center;
   border-bottom: solid 1px #d0d7de;
   border-top: none;
@@ -11,9 +11,11 @@
   display: flex;
   align-items: center;
   flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: nowrap;
 }
 
-.logoContainer,
 .titleContainer {
   padding: 5px;
 }
@@ -23,7 +25,7 @@
 }
 
 .logoContainer > img {
-  width: 40px;
+  width: 80px;
 }
 .skeletonContainer {
   padding: 2px 0px;
@@ -33,11 +35,18 @@
   .header {
     padding: 0;
   }
+
+  .logoContainer {
+    padding: 5px;
+  }
 }
 
 @media (max-width: 600px) {
   .header {
     padding: 5px;
+  }
+  .titleContainer {
+    display: none;
   }
 
   .logoContainer,
@@ -47,6 +56,7 @@
 
   .innerContainer {
     height: 70px;
+    justify-content: center;
   }
 
   .innerContainer span {

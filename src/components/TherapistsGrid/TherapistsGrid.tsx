@@ -44,23 +44,21 @@ function TherapistsGrid() {
 
   return (
     <div>
-      <Content>
-        <TherapistListFilter
-          columns={columns}
-          onSubmit={setSearch}
-          reset={reload}
-        />
-        <Table
-          bordered
-          columns={columns}
-          scroll={{ x: true }}
-          onChange={handleChange}
-          dataSource={list}
-          pagination={pagingConfig}
-          loading={loading}
-          rowKey={(record: ITherapist) => record._id}
-        ></Table>
-      </Content>
+      <TherapistListFilter
+        columns={columns}
+        onSubmit={setSearch}
+        reset={reload}
+      />
+      <Table
+        bordered
+        columns={columns}
+        scroll={{ x: true }}
+        onChange={handleChange}
+        dataSource={list}
+        pagination={pagingConfig}
+        loading={loading}
+        rowKey={(record: ITherapist) => record._id}
+      ></Table>
     </div>
   )
 }
