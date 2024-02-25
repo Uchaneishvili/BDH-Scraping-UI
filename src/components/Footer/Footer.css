@@ -1,8 +1,8 @@
 .container {
   color: #1f2328;
-  padding: 18px;
+  padding: 20px;
   text-align: center;
-  border-top: solid 1px #d0d7de;
+  border-top: solid 2px #bbd3f5;
   height: 100%;
   display: flex;
 }
