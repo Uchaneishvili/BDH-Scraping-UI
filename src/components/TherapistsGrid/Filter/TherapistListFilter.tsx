@@ -34,8 +34,8 @@ const TherapistListFilter: FC<IProps> = (props) => {
   return (
     <>
       <Form form={form}>
-        <Row gutter={24}>
-          <Col {...ColProps} xl={{ span: 6 }} md={{ span: 8 }}>
+        <Row>
+          <Col>
             <Form.Item name='search'>
               <Search
                 onSearch={handleSubmit}
@@ -44,17 +44,16 @@ const TherapistListFilter: FC<IProps> = (props) => {
               />
             </Form.Item>
           </Col>
-          <Col {...ColProps} xl={{ span: 4 }} md={{ span: 6 }} sm={{ span: 8 }}>
+          <Col style={{ marginLeft: '10px' }}>
             <Button type='primary' onClick={() => handleReset()}>
               {'reset'}
             </Button>
           </Col>
           <Col flex='auto'></Col>
 
-          <Col flex='100px'>
+          <Col>
             <Button
               type='primary'
-              icon={<PlusOutlined />}
               onClick={async () => {
                 crawlTherapists()
               }}
