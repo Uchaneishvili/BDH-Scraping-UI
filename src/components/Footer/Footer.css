@@ -1,0 +1,23 @@
+.container {
+  color: #1f2328;
+  padding: 16px;
+  text-align: center;
+  border-top: solid 1px #d0d7de;
+  height: 100%;
+}
+
+.innerContainer {
+  margin: 0 auto;
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    padding: 0.1em;
+  }
+}
+/* Responsive styles */
+@media (max-width: 600px) {
+  .container {
+    padding: 6px;
+  }
+}
